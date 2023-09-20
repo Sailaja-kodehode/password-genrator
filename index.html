@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="page_container" id="page-el">
+      <div class="box_container" id="bx-el">
+        <h2 class="title">Generate</h2>
+        <h2 class="title_two">Random Passwords</h2>
+        <h3 class="subtitle">Generate random one time passwords</h3>
+        <!-- button click should generate  a password -->
+        <br />
+        <div class="input_field">
+          <p id="passEl" class="pass_el"></p>
+          <p id="passElTwo" class="pass_el"></p>
+        </div>
+
+        <div
+          class="btn"
+          onclick="generatePassword() ; generateSecondPassword()"
+        >
+          Generator passwords
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
